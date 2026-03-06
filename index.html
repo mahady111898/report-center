@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Center</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+color:#38bdf8;
+}
+
+.box{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+
+input,textarea,select{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+margin-top:15px;
+padding:12px;
+width:100%;
+border:none;
+border-radius:8px;
+background:#22c55e;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+footer{
+margin-top:30px;
+opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Online Report Center</h1>
+
+<div class="box">
+
+<h3>Report Form</h3>
+
+<input type="text" placeholder="আপনার নাম">
+
+<input type="text" placeholder="প্রোফাইল / পোস্ট লিংক">
+
+<select>
+<option>রিপোর্টের কারণ নির্বাচন করুন</option>
+<option>Fake Account</option>
+<option>Adult Content</option>
+<option>Harassment</option>
+<option>Spam</option>
+</select>
+
+<textarea rows="5" placeholder="বিস্তারিত লিখুন"></textarea>
+
+<button onclick="submitReport()">Submit Report</button>
+
+</div>
+
+<footer>
+Cyber Report System
+</footer>
+
+</div>
+
+<script>
+function submitReport(){
+alert("আপনার রিপোর্ট সাবমিট হয়েছে। ধন্যবাদ।");
+}
+</script>
+
+</body>
+</html>
